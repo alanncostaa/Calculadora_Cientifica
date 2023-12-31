@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter;
+}
+
+body{
+    background-color: #4A5042;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3em;
+    
+}
+
+#cal{
+    width: 573px;
+    padding: 3em;
+    background-color: #739449;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1em;
+} 
+
+#operacoes{
+    text-align: right;
+}
+
+#anterior-operacao{
+    color: #496525;
+    padding: 0.2em;
+    overflow-wrap: break-word;
+    min-height: 1.6em;
+    font-size: 1.5em;
+}
+
+#digitada-operacao{
+    color: white;
+    min-height: 1.6em;
+    font-size: 3em;
+    font-weight: 700;
+    padding: 0.2em;
+    overflow-wrap: break-word;
+}
+
+#buttons-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 8px
+}
+
+#buttons-container button{
+    border: 1px solid transparent;
+    border-radius: 1em;
+    height: 4em;
+    font-size: 1.2em;
+    color: #274703;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+#buttons-container button:hover{
+    
+    color: white;
+    background-color: #274703;
+    
+}
+
+#buttons-container .num-btn{
+
+    color: white;
+    background-color: #496525;
+}
+
+#buttons-container .num-btn:hover{
+
+    color: #496525;
+    background-color: white;
+}
+
+#buttons-container .btn-igual{
+
+    background-color: #9FE84C;
+}
+
